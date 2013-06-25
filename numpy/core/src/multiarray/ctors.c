@@ -3522,6 +3522,8 @@ PyArray_FromIter(PyObject *obj, PyArray_Descr *dtype, npy_intp count)
     }
 
     if (i < count) {
+        if (PyErr_Occurred()) goto done;
+        
         PyErr_SetString(PyExc_ValueError, "iterator too short");
         goto done;
     }
