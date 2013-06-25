@@ -860,7 +860,7 @@ lapack_lite_zungqr(PyObject *NPY_UNUSED(self), PyObject *args)
 
 
 static PyObject *
-lapack_lite_xerbla(PyObject *NPY_UNUSED(self), PyObject *args)
+lapack_lite_xerbla(PyObject *NPY_UNUSED(self), PyObject *NPY_UNUSED(args))
 {
     int info = -1;
 
